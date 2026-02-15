@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Styled Text Example</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 90vh;
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+
+    /* Increased border width */
+    border: 6px solid #1e40af;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    overflow-y: auto;
+  }
+
+  h1 {
+    color: #1e40af;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    color: #047857;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: #7c2d12;
+    margin-top: 25px;
+  }
+
+  p {
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .highlight {
+    color: #be185d;
+    font-weight: 600;
+  }
+
+  .box {
+    background: #eef2ff;
+    padding: 20px;
+    border-left: 6px solid #6366f1;
+    border-radius: 8px;
+    margin: 25px 0;
+  }
+
+  img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 25px 0;
+    background: #fafafa;
+    padding: 10px;
+    border: 2px solid #ddd;
+  }
+
+  button {
+    background: #1e40af;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #1e3a8a;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    color: #0284c7;
+    font-weight: 600;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Added main heading -->
+  <h1>Web Development Starter Page</h1>
+
+  <h2>Learning Web Design</h2>
+
+  <p>
+    Web design is the process of creating websites that are visually appealing and easy to use. 
+    Proper typography, spacing, and color choices help create professional-looking layouts .
+    To create a web page there are 3 parts namely 
+                    *index.html (An html file whcih plays majour role)
+                    *styles.css(This give designs to your page like colours)
+                    *script.js(use to create functions, buttons)
+  </p>
+
+  <img 
+    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+    alt="People designing a website together">
+
+  <h2>Why Styling Matters</h2>
+
+  <p>
+    Styling controls how content appears on the screen. Using balanced colors and readable fonts 
+    keeps visitors engaged for longer periods.
+  </p>
+
+  <div class="box">
+    <h3>Pro Tip</h3>
+    <p>
+      White space is just as important as content. It gives breathing room to elements and improves 
+      overall clarity.
+    </p>
+  </div>
+
+  <h2>Colors and Fonts</h2>
+
+  <p>
+    Colors influence mood and emotion. Modern fonts like 
+    <span class="highlight">Inter</span> improve screen readability.
+  </p>
+
+  <button onclick="showMessage()">Click Me</button>
+
+  <br>
+
+  <a href="https://developer.mozilla.org" target="_blank">
+    Learn More at MDN Web Docs
+  </a>
+
+</div>
+
+<script>
+  function showMessage() {
+    alert("Let's start to learn!");
+  }
+</script>
+
+</body>
+</html>
